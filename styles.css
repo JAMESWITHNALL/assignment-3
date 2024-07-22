@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0f6d9258;
+    margin: 0;
+}
+
+.game-container {
+    text-align: center;
+}
+
+.cookie-section {
+    margin-bottom: 20px;
+}
+
+#cookie {
+    width: 150px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+#cookie:active {
+    transform: scale(0.9);
+}
+
+.upgrade-section {
+    margin-top: 20px;
+    margin-left: 20px;
+    align-items: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    margin-left: 10px;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+}
+
+#cookie:active {
+    animation: bounce 0.1s;
+}
